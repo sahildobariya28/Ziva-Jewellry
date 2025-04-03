@@ -1,3 +1,25 @@
+/* today */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+    background-color: rgba(248, 236, 236, 0.5);
+    backdrop-filter: blur(40px);
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.image-additional .img-item img , .image-thumbnail .img-item .img-thumbnail-scroll{
+	border-radius: 16px;
+}
+
 /* my css */
 .benner[class~=section][class~=bg-img-3]{
 	background-color: #F7AF9D !important; 
@@ -11977,7 +11999,11 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 [class~=block-products][class~=slider] [class~=content-product-list] i[class~=slick-arrow] {
-	top: 40%;
+    top: 45%;
+    background: #6c3636;
+    padding: 7px;
+    color: white;
+    border-radius: 12px;
 }
 
 [class~=block-sliders] i[class~=slick-arrow] {
@@ -30791,6 +30817,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 .all-product-sec .product-box{
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 
