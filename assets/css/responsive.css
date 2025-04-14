@@ -337,7 +337,7 @@
     display: none;
   }
   .home .site-header.header-v1 {
-    position: absolute;
+    position: fixed;
     width: 100%;
   }
   .home .site-header.header-v1.relative {

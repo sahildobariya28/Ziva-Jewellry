@@ -415,7 +415,6 @@ if ( typeof Object.create !== 'function' ) {
 
 				}
 
-
 				//  lensFadeOut: 500,  zoomTintFadeIn
 				self.zoomContainer.add(self.$elem).mouseenter(function(){
 
@@ -425,15 +424,11 @@ if ( typeof Object.create !== 'function' ) {
 				}).mouseleave(function(){
 					if(!self.scrollLock){
 						self.setElements("hide");
-            self.options.onDestroy(self.$elem);
+            			self.options.onDestroy(self.$elem);
 					}
 				});
+
 				//end ove image
-
-
-
-
-
 				if(self.options.zoomType != "inner") {
 					self.zoomWindow.mouseenter(function(){
 						self.overWindow = true;   

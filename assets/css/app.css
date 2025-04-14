@@ -11087,6 +11087,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 
 [class~=site-navigation] ul>li[class~=level-0]>a>span {
 	display: inline-block;
+	font-weight: 600;
 }
 
 [class~=mini-cart] [class~=cart-popup] [class~=cart-list] li[class~=empty] [class~=go-shop] i {
@@ -30884,11 +30885,14 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 .contect-form,
 .Faq{
 	background-image: url(../img/bg.svg);
-	/* background-size: cover; */
-	background-repeat: repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #F2DADA;
-	padding: 30px 10px;
+	height: 100%;
+}
+.Faq{
+	background-color: transparent !important;
 }
 .contect-form{
 	padding-bottom: 70px;
@@ -30898,6 +30902,8 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	font-weight: 600;
 	color: #4E2A2A;
 	text-align: center;
+	margin-top: 0;
+	padding-top: 50px;
 }
 .contect-form .form-input{
 	display: grid;
@@ -30967,7 +30973,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	padding: 10px 0;
 }
 .Faq .faq-drop-down-main{
-	padding-top: 10%;
+	padding: 30px 0;
 	align-items: center;
 }
 /* FAQ End */
