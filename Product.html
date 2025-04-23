@@ -1,621 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta Data -->
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jewellry</title>
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
-		
-		<!-- Dependency Styles -->
-		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" type="text/css">
-		<link rel="stylesheet" href="libs/feather-font/css/iconfont.css" type="text/css">
-		<link rel="stylesheet" href="libs/icomoon-font/css/icomoon.css" type="text/css">
-		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css" type="text/css">
-		<link rel="stylesheet" href="libs/wpbingofont/css/wpbingofont.css" type="text/css">
-		<link rel="stylesheet" href="libs/elegant-icons/css/elegant.css" type="text/css">
-		<link rel="stylesheet" href="libs/slick/css/slick.css" type="text/css">
-		<link rel="stylesheet" href="libs/slick/css/slick-theme.css" type="text/css">
-		<link rel="stylesheet" href="libs/mmenu/css/mmenu.min.css" type="text/css">
 
-		<!-- Site Stylesheet -->
-		<link rel="stylesheet" href="assets/css/app.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
-		
-		<!-- Google Web Fonts -->
-		<link href="../../css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-		<link href="../../css2-1?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	</head>
-	
-	<body class="home">
-		<header id="site-header" class="site-header header-v1 color-white">
-			<!-- header-mobile -->
-			<div class="header-mobile">
-				<div class="section-padding">
-					<div class="section-container">
-						<div class="row">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3 header-left">
-								<div class="navbar-header">
-									<button type="button" id="show-megamenu" class="navbar-toggle"></button>
+<head>
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jewellry</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="libs/feather-font/css/iconfont.css" type="text/css">
+	<link rel="stylesheet" href="libs/icomoon-font/css/icomoon.css" type="text/css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css" type="text/css">
+	<link rel="stylesheet" href="libs/wpbingofont/css/wpbingofont.css" type="text/css">
+	<link rel="stylesheet" href="libs/elegant-icons/css/elegant.css" type="text/css">
+	<link rel="stylesheet" href="libs/slick/css/slick.css" type="text/css">
+	<link rel="stylesheet" href="libs/slick/css/slick-theme.css" type="text/css">
+	<link rel="stylesheet" href="libs/mmenu/css/mmenu.min.css" type="text/css">
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link
+		href="../../css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link
+		href="../../css2-1?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body class="home">
+	<header id="site-header" class="site-header header-v1 color-white">
+		<!-- header-mobile -->
+		<div class="header-mobile">
+			<div class="section-padding">
+				<div class="section-container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3 header-left">
+							<div class="navbar-header">
+								<button type="button" id="show-megamenu" class="navbar-toggle"></button>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
+							<div class="site-logo">
+								<a href="index.html">
+									<img width="150" height="140" src="media/ziva.logo.svg.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3 header-right">
+							<div class="mojuri-topcart dropdown">
+								<div class="dropdown mini-cart top-cart">
+									<div class="remove-cart-shadow"></div>
+									<a class="dropdown-toggle cart-icon" href="#" role="button" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<div class="icons-cart"><i class="icon-large-paper-bag"></i><span
+												class="cart-count">2</span></div>
+									</a>
+									<div class="dropdown-menu cart-popup">
+										<div class="cart-empty-wrap">
+											<ul class="cart-list">
+												<li class="empty">
+													<span>No products in the cart.</span>
+													<a class="go-shop" href="shop-grid-left.html">GO TO SHOP<i
+															aria-hidden="true" class="arrow_right"></i></a>
+												</li>
+											</ul>
+										</div>
+										<div class="cart-list-wrap">
+											<ul class="cart-list ">
+												<li class="mini-cart-item">
+													<a href="#" class="remove" title="Remove this item"><i
+															class="icon_close"></i></a>
+													<a href="#" class="product-image"><img width="600" height="600"
+															src="media/product/3.jpg" alt=""></a>
+													<a href="#" class="product-name">Twin Hoops</a>
+													<div class="quantity">Qty: 1</div>
+													<div class="price">$150.00</div>
+												</li>
+												<li class="mini-cart-item">
+													<a href="#" class="remove" title="Remove this item"><i
+															class="icon_close"></i></a>
+													<a href="#" class="product-image"><img width="600" height="600"
+															src="media/product/1.jpg" alt=""></a>
+													<a href="#" class="product-name">Medium Flat
+														Hoops</a>
+													<div class="quantity">Qty: 1</div>
+													<div class="price">$100.00</div>
+												</li>
+											</ul>
+											<div class="total-cart">
+												<div class="title-total">Total: </div>
+												<div class="total-price"><span>$250.00</span></div>
+											</div>
+											<div class="free-ship">
+												<div class="title-ship">Buy <strong>$400</strong> more to enjoy
+													<strong>FREE Shipping</strong>
+												</div>
+												<div class="total-percent">
+													<div class="percent" style="width:20%"></div>
+												</div>
+											</div>
+											<div class="buttons">
+												<a href="shop-cart.html" class="button btn view-cart btn-primary">View
+													cart</a>
+												<a href="shop-checkout.html"
+													class="button btn checkout btn-default">Check out</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-mobile-fixed">
+				<!-- Shop -->
+				<div class="shop-page">
+					<a href="shop-grid-left.html"><i class="wpb-icon-shop"></i></a>
+				</div>
+
+				<!-- Login -->
+				<div class="my-account">
+					<div class="login-header">
+						<a href="page-my-account.html"><i class="wpb-icon-user"></i></a>
+					</div>
+				</div>
+
+				<!-- Search -->
+				<div class="search-box">
+					<div class="search-toggle"><i class="wpb-icon-magnifying-glass"></i></div>
+				</div>
+
+				<!-- Wishlist -->
+				<div class="wishlist-box">
+					<a href="shop-wishlist.html"><i class="wpb-icon-heart"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-desktop">
+			<div class="header-wrapper">
+				<div class="section-padding">
+					<div class="section-container large p-l-r">
+						<div class="row">
+							<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 header-left">
 								<div class="site-logo">
 									<a href="index.html">
-										<img width="150" height="140" src="media/ziva.logo.svg.svg" alt="">
+										<img width="150" height="140" src="media/ziva.logo.svg.svg" alt="logo">
 									</a>
 								</div>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3 header-right">
-								<div class="mojuri-topcart dropdown">
-									<div class="dropdown mini-cart top-cart">
-										<div class="remove-cart-shadow"></div>
-										<a class="dropdown-toggle cart-icon" href="#" role="button"
-											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<div class="icons-cart"><i class="icon-large-paper-bag"></i><span
-													class="cart-count">2</span></div>
-										</a>
-										<div class="dropdown-menu cart-popup">
-											<div class="cart-empty-wrap">
-												<ul class="cart-list">
-													<li class="empty">
-														<span>No products in the cart.</span>
-														<a class="go-shop" href="shop-grid-left.html">GO TO SHOP<i
-																aria-hidden="true" class="arrow_right"></i></a>
-													</li>
-												</ul>
-											</div>
-											<div class="cart-list-wrap">
-												<ul class="cart-list ">
-													<li class="mini-cart-item">
-														<a href="#" class="remove" title="Remove this item"><i
-																class="icon_close"></i></a>
-														<a href="#" class="product-image"><img
-																width="600" height="600" src="media/product/3.jpg"
-																alt=""></a>
-														<a href="#" class="product-name">Twin Hoops</a>
-														<div class="quantity">Qty: 1</div>
-														<div class="price">$150.00</div>
-													</li>
-													<li class="mini-cart-item">
-														<a href="#" class="remove" title="Remove this item"><i
-																class="icon_close"></i></a>
-														<a href="#" class="product-image"><img
-																width="600" height="600" src="media/product/1.jpg"
-																alt=""></a>
-														<a href="#" class="product-name">Medium Flat
-															Hoops</a>
-														<div class="quantity">Qty: 1</div>
-														<div class="price">$100.00</div>
-													</li>
-												</ul>
-												<div class="total-cart">
-													<div class="title-total">Total: </div>
-													<div class="total-price"><span>$250.00</span></div>
-												</div>
-												<div class="free-ship">
-													<div class="title-ship">Buy <strong>$400</strong> more to enjoy
-														<strong>FREE Shipping</strong></div>
-													<div class="total-percent">
-														<div class="percent" style="width:20%"></div>
-													</div>
-												</div>
-												<div class="buttons">
-													<a href="shop-cart.html"
-														class="button btn view-cart btn-primary">View cart</a>
-													<a href="shop-checkout.html"
-														class="button btn checkout btn-default">Check out</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="header-mobile-fixed">
-					<!-- Shop -->
-					<div class="shop-page">
-						<a href="shop-grid-left.html"><i class="wpb-icon-shop"></i></a>
-					</div>
-
-					<!-- Login -->
-					<div class="my-account">
-						<div class="login-header">
-							<a href="page-my-account.html"><i class="wpb-icon-user"></i></a>
-						</div>
-					</div>
-
-					<!-- Search -->
-					<div class="search-box">
-						<div class="search-toggle"><i class="wpb-icon-magnifying-glass"></i></div>
-					</div>
-
-					<!-- Wishlist -->
-					<div class="wishlist-box">
-						<a href="shop-wishlist.html"><i class="wpb-icon-heart"></i></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="header-desktop">
-				<div class="header-wrapper">
-					<div class="section-padding">
-						<div class="section-container large p-l-r">
-							<div class="row">
-								<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 header-left">
-									<div class="site-logo">
-										<a href="index.html">
-											<img width="150" height="140" src="media/ziva.logo.svg.svg" alt="logo">
-										</a>
-									</div>
-								</div>
-
-								<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-center header-center">
-									<div class="site-navigation">
-										<nav id="main-navigation">
-											<ul id="menu-main-menu" class="menu">
-												<li class="level-0 menu-item menu-item-has-children">
-													<a href="index.html"><span class="menu-item-text">Home</span></a>
-												</li>
-												<li class="level-0 menu-item menu-item-has-children current-menu-item">
-													<a href="Product.html"><span
-															class="menu-item-text">Product</span></a>
-												</li>
-												<li
-													class="level-0 menu-item menu-item-has-children mega-menu mega-menu-fullwidth align-center">
-													<a href="about.html"><span class="menu-item-text">About
-															us</span></a>
-												</li>
-												<li class="level-0 menu-item menu-item-has-children">
-													<a href="Faq.html"><span class="menu-item-text">FAQ</span></a>
-												</li>
-												<li class="level-0 menu-item">
-													<a href="contect.html"><span
-															class="menu-item-text">Contact</span></a>
-												</li>
-											</ul>
-										</nav>
-									</div>
+							<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-center header-center">
+								<div class="site-navigation">
+									<nav id="main-navigation">
+										<ul id="menu-main-menu" class="menu">
+											<li class="level-0 menu-item menu-item-has-children">
+												<a href="index.html"><span class="menu-item-text">Home</span></a>
+											</li>
+											<li class="level-0 menu-item menu-item-has-children current-menu-item">
+												<a href="Product.html"><span class="menu-item-text">Product</span></a>
+											</li>
+											<li
+												class="level-0 menu-item menu-item-has-children mega-menu mega-menu-fullwidth align-center">
+												<a href="about.html"><span class="menu-item-text">About
+														us</span></a>
+											</li>
+											<li class="level-0 menu-item menu-item-has-children">
+												<a href="Faq.html"><span class="menu-item-text">FAQ</span></a>
+											</li>
+											<li class="level-0 menu-item">
+												<a href="contect.html"><span class="menu-item-text">Contact</span></a>
+											</li>
+										</ul>
+									</nav>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-        <div id="page" class="hfeed page-wrapper">
-            <div class="Product-main">
-                <img src="./assets/img/product-hero.svg" alt="" width="100%">
-            </div>
-            <div class="all-product-main">
-                <div class="container">
-                    <div class="mt-7">
-                        <h1 class="text-all-product">All Product</h1>
-                    </div>
-                    <div class="all-product-sec">
-						<div class="row" id="product-list"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<!-- Back Top button -->
-		<div class="back-top button-show">
-			<i class="arrow_carrot-up"></i>
 		</div>
+	</header>
+	<div id="page" class="hfeed page-wrapper">
+		<div class="Product-main">
+			<img src="./assets/img/product-hero.svg" alt="" width="100%">
+		</div>
+		<div class="all-product-main">
+			<div class="container">
+				<div class="mt-7">
+					<h1 class="text-all-product">All Product</h1>
+				</div>
+				<div class="all-product-sec">
+					<div class="row" id="product-list"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Back Top button -->
+	<div class="back-top button-show">
+		<i class="arrow_carrot-up"></i>
+	</div>
 
-		<!-- Search -->
-		<div class="search-overlay">
-			<div class="close-search"></div>
-			<div class="wrapper-search">
-				<form role="search" method="get" class="search-from ajax-search" action="">
-					<a href="#" class="search-close"></a>
-					<div class="search-box">
-						<button id="searchsubmit" class="btn" type="submit">
-							<i class="icon-search"></i>
-						</button>
-						<input type="text" autocomplete="off" value="" name="s" class="input-search s" placeholder="Search...">
-						<div class="content-menu_search">
-							<label>Suggested</label>
-							<ul id="menu_search" class="menu">
-								<li><a href="#">Earrings</a></li>
-								<li><a href="#">Necklaces</a></li>
-								<li><a href="#">Bracelets</a></li>
-								<li><a href="#">Jewelry Box</a></li>
-							</ul>			
-						</div>
+	<!-- Search -->
+	<div class="search-overlay">
+		<div class="close-search"></div>
+		<div class="wrapper-search">
+			<form role="search" method="get" class="search-from ajax-search" action="">
+				<a href="#" class="search-close"></a>
+				<div class="search-box">
+					<button id="searchsubmit" class="btn" type="submit">
+						<i class="icon-search"></i>
+					</button>
+					<input type="text" autocomplete="off" value="" name="s" class="input-search s"
+						placeholder="Search...">
+					<div class="content-menu_search">
+						<label>Suggested</label>
+						<ul id="menu_search" class="menu">
+							<li><a href="#">Earrings</a></li>
+							<li><a href="#">Necklaces</a></li>
+							<li><a href="#">Bracelets</a></li>
+							<li><a href="#">Jewelry Box</a></li>
+						</ul>
 					</div>
-				</form>	
-			</div>	
+				</div>
+			</form>
 		</div>
+	</div>
 
-		<!-- Wishlist -->
-		<div class="wishlist-popup">
-			<div class="wishlist-popup-inner">
-                <div class="wishlist-popup-content">
-                    <div class="wishlist-popup-content-top">
-                        <span class="wishlist-name">Wishlist</span>
-						<span class="wishlist-count-wrapper"><span class="wishlist-count">2</span></span>                                
-						<span class="wishlist-popup-close"></span>
-                    </div>
-                    <div class="wishlist-popup-content-mid">
-						<table class="wishlist-items">                        
-							<tbody>
-								<tr class="wishlist-item">
-									<td class="wishlist-item-remove"><span></span></td>
-									<td class="wishlist-item-image">
-                                    	<a href="shop-details.html">
-											<img width="600" height="600" src="media/product/3.jpg" alt="">                                        
-										</a>
-		                       		</td>
-			                        <td class="wishlist-item-info">
-										<div class="wishlist-item-name">
-											<a href="shop-details.html">Twin Hoops</a>
+	<!-- Wishlist -->
+	<div class="wishlist-popup">
+		<div class="wishlist-popup-inner">
+			<div class="wishlist-popup-content">
+				<div class="wishlist-popup-content-top">
+					<span class="wishlist-name">Wishlist</span>
+					<span class="wishlist-count-wrapper"><span class="wishlist-count">2</span></span>
+					<span class="wishlist-popup-close"></span>
+				</div>
+				<div class="wishlist-popup-content-mid">
+					<table class="wishlist-items">
+						<tbody>
+							<tr class="wishlist-item">
+								<td class="wishlist-item-remove"><span></span></td>
+								<td class="wishlist-item-image">
+									<a href="shop-details.html">
+										<img width="600" height="600" src="media/product/3.jpg" alt="">
+									</a>
+								</td>
+								<td class="wishlist-item-info">
+									<div class="wishlist-item-name">
+										<a href="shop-details.html">Twin Hoops</a>
+									</div>
+									<div class="wishlist-item-price">
+										<span>$150.00</span>
+									</div>
+									<div class="wishlist-item-time">June 4, 2022</div>
+								</td>
+								<td class="wishlist-item-actions">
+									<div class="wishlist-item-stock">
+										In stock
+									</div>
+									<div class="wishlist-item-add">
+										<div data-title="Add to cart">
+											<a rel="nofollow" href="#">Add to cart</a>
 										</div>
-										<div class="wishlist-item-price">
-											<span>$150.00</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="wishlist-item">
+								<td class="wishlist-item-remove"><span></span></td>
+								<td class="wishlist-item-image">
+									<a href="shop-details.html">
+										<img width="600" height="600" src="media/product/4.jpg" alt="">
+									</a>
+								</td>
+								<td class="wishlist-item-info">
+									<div class="wishlist-item-name">
+										<a href="shop-details.html">Yilver And Turquoise Earrings</a>
+									</div>
+									<div class="wishlist-item-price">
+										<del aria-hidden="true"><span>$150.00</span></del>
+										<ins><span>$100.00</span></ins>
+									</div>
+									<div class="wishlist-item-time">June 4, 2022</div>
+								</td>
+								<td class="wishlist-item-actions">
+									<div class="wishlist-item-stock">
+										In stock
+									</div>
+									<div class="wishlist-item-add">
+										<div data-title="Add to cart">
+											<a rel="nofollow" href="#">Add to cart</a>
 										</div>
-										<div class="wishlist-item-time">June 4, 2022</div>                                
-									</td>
-			                        <td class="wishlist-item-actions">
-			                            <div class="wishlist-item-stock">
-											In stock 
-										</div>
-			                            <div class="wishlist-item-add">
-											<div data-title="Add to cart">
-												<a rel="nofollow" href="#">Add to cart</a>
-											</div>
-										</div>
-	                                </td>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wishlist-popup-content-bot">
+					<div class="wishlist-popup-content-bot-inner">
+						<a class="wishlist-page" href="shop-wishlist.html">
+							Open wishlist page
+						</a>
+						<span class="wishlist-continue" data-url="">
+							Continue shopping
+						</span>
+					</div>
+					<div class="wishlist-notice wishlist-notice-show">Added to the wishlist!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Compare -->
+	<div class="compare-popup">
+		<div class="compare-popup-inner">
+			<div class="compare-table">
+				<div class="compare-table-inner">
+					<a href="#" id="compare-table-close" class="compare-table-close">
+						<span class="compare-table-close-icon"></span>
+					</a>
+					<div class="compare-table-items">
+						<table id="product-table" class="product-table">
+							<thead>
+								<tr>
+									<th>
+										<a href="#" class="compare-table-settings">Settings</a>
+									</th>
+									<th>
+										<a href="shop-details.html">Twin Hoops</a> <span class="remove">remove</span>
+									</th>
+									<th>
+										<a href="shop-details.html">Medium Flat Hoops</a> <span
+											class="remove">remove</span>
+									</th>
+									<th>
+										<a href="shop-details.html">Bold Pearl Hoop Earrings</a> <span
+											class="remove">remove</span>
+									</th>
 								</tr>
-								<tr class="wishlist-item">
-									<td class="wishlist-item-remove"><span></span></td>
-									<td class="wishlist-item-image">
-                                    	<a href="shop-details.html">
-											<img width="600" height="600" src="media/product/4.jpg" alt="">                                        
+							</thead>
+							<tbody>
+								<tr class="tr-image">
+									<td class="td-label">Image</td>
+									<td>
+										<a href="shop-details.html">
+											<img width="600" height="600" src="media/product/3.jpg" alt="">
 										</a>
-		                       		</td>
-			                        <td class="wishlist-item-info">
-										<div class="wishlist-item-name">
-											<a href="shop-details.html">Yilver And Turquoise Earrings</a>
-										</div>
-										<div class="wishlist-item-price">
-											<del aria-hidden="true"><span>$150.00</span></del> 
-											<ins><span>$100.00</span></ins>
-										</div>
-										<div class="wishlist-item-time">June 4, 2022</div>                                
 									</td>
-			                        <td class="wishlist-item-actions">
-			                            <div class="wishlist-item-stock">
-											In stock 
+									<td>
+										<a href="shop-details.html">
+											<img width="600" height="600" src="media/product/1.jpg" alt="">
+										</a>
+									</td>
+									<td>
+										<a href="shop-details.html">
+											<img width="600" height="600" src="media/product/2.jpg" alt="">
+										</a>
+									</td>
+								</tr>
+								<tr class="tr-sku">
+									<td class="td-label">SKU</td>
+									<td>VN00189</td>
+									<td></td>
+									<td>D1116</td>
+								</tr>
+								<tr class="tr-rating">
+									<td class="td-label">Rating</td>
+									<td>
+										<div class="star-rating">
+											<span style="width:80%"></span>
 										</div>
-			                            <div class="wishlist-item-add">
-											<div data-title="Add to cart">
-												<a rel="nofollow" href="#">Add to cart</a>
-											</div>
+									</td>
+									<td>
+										<div class="star-rating">
+											<span style="width:100%"></span>
 										</div>
-	                                </td>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="tr-price">
+									<td class="td-label">Price</td>
+									<td><span class="amount">$150.00</span></td>
+									<td><del><span class="amount">$150.00</span></del> <ins><span
+												class="amount">$100.00</span></ins></td>
+									<td><span class="amount">$200.00</span></td>
+								</tr>
+								<tr class="tr-add-to-cart">
+									<td class="td-label">Add to cart</td>
+									<td>
+										<div data-title="Add to cart">
+											<a href="#" class="button">Add to cart</a>
+										</div>
+									</td>
+									<td>
+										<div data-title="Add to cart">
+											<a href="#" class="button">Add to cart</a>
+										</div>
+									</td>
+									<td>
+										<div data-title="Add to cart">
+											<a href="#" class="button">Add to cart</a>
+										</div>
+									</td>
+								</tr>
+								<tr class="tr-description">
+									<td class="td-label">Description</td>
+									<td>Phasellus sed volutpat orci. Fusce eget lore mauris vehicula elementum gravida
+										nec dui. Aenean aliquam varius ipsum, non ultricies tellus sodales eu. Donec
+										dignissim viverra nunc, ut aliquet magna posuere eget.</td>
+									<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+										fugiat nulla pariatur.</td>
+									<td>The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece
+										comfort all year around. Feel better in this sweatshirt because Hanes keeps
+										plastic bottles of landfills by using recycled polyester.7.8 ounce fleece
+										sweatshirt made with up to 5 percent polyester created from recycled plastic.
+									</td>
+								</tr>
+								<tr class="tr-content">
+									<td class="td-label">Content</td>
+									<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+										culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+										omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+										rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+										beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+										aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+										ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+										quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+										tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
+									<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+										culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+										omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+										rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+										beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+										aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+										ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+										quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+										tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
+									<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+										culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+										omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+										rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+										beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+										aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+										ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+										quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+										tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
+								</tr>
+								<tr class="tr-dimensions">
+									<td class="td-label">Dimensions</td>
+									<td>N/A</td>
+									<td>N/A</td>
+									<td>N/A</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-                    <div class="wishlist-popup-content-bot">
-                        <div class="wishlist-popup-content-bot-inner">
-                            <a class="wishlist-page" href="shop-wishlist.html">
-								Open wishlist page                                    
-							</a>
-                            <span class="wishlist-continue" data-url="">
-                                Continue shopping                                        
-                            </span>
-                        </div>
-                        <div class="wishlist-notice wishlist-notice-show">Added to the wishlist!</div>
-                    </div>
-                </div>
-            </div>
-		</div>
-
-		<!-- Compare -->
-		<div class="compare-popup">
-		    <div class="compare-popup-inner">
-		        <div class="compare-table">
-		            <div class="compare-table-inner">
-                    	<a href="#" id="compare-table-close" class="compare-table-close">
-                    		<span class="compare-table-close-icon"></span>
-                    	</a>
-                    	<div class="compare-table-items">
-                    		<table id="product-table" class="product-table">
-                    			<thead>
-                    				<tr>
-                    					<th>
-                    						<a href="#" class="compare-table-settings">Settings</a>
-                    					</th>
-                    					<th>
-                    						<a href="shop-details.html">Twin Hoops</a> <span class="remove">remove</span>
-                    					</th>
-                    					<th>
-                    						<a href="shop-details.html">Medium Flat Hoops</a> <span class="remove">remove</span>
-                    					</th>
-                    					<th>
-                    						<a href="shop-details.html">Bold Pearl Hoop Earrings</a> <span class="remove">remove</span>
-                    					</th>
-                    				</tr>
-                    			</thead>
-                    			<tbody>
-                    				<tr class="tr-image">
-                    					<td class="td-label">Image</td>
-                    					<td>
-                    						<a href="shop-details.html">
-                    							<img width="600" height="600" src="media/product/3.jpg" alt="">
-                    						</a>
-                    					</td>
-                    					<td>
-                    						<a href="shop-details.html">
-                    							<img width="600" height="600" src="media/product/1.jpg" alt="">
-                    						</a>
-                    					</td>
-                    					<td>
-                    						<a href="shop-details.html">
-                    							<img width="600" height="600" src="media/product/2.jpg" alt="">
-                    						</a>
-                    					</td>
-                    				</tr>
-                    				<tr class="tr-sku">
-                    					<td class="td-label">SKU</td>
-                    					<td>VN00189</td>
-                    					<td></td>
-                    					<td>D1116</td>
-                    				</tr>
-                    				<tr class="tr-rating">
-                    					<td class="td-label">Rating</td>
-                    					<td>
-                    						<div class="star-rating">
-                    							<span style="width:80%"></span>
-                    						</div>
-                    					</td>
-                    					<td>
-                    						<div class="star-rating">
-                    							<span style="width:100%"></span>
-                    						</div>
-                    					</td>
-                    					<td></td>
-                    				</tr>
-                    				<tr class="tr-price">
-                    					<td class="td-label">Price</td>
-                    					<td><span class="amount">$150.00</span></td>
-                    					<td><del><span class="amount">$150.00</span></del> <ins><span class="amount">$100.00</span></ins></td>
-                    					<td><span class="amount">$200.00</span></td>
-                    				</tr>
-                    				<tr class="tr-add-to-cart">
-                    					<td class="td-label">Add to cart</td>
-                    					<td>
-                    						<div data-title="Add to cart">
-                    							<a href="#" class="button">Add to cart</a>
-                    						</div>
-                    					</td>
-                    					<td>
-                    						<div data-title="Add to cart">
-                    							<a href="#" class="button">Add to cart</a>
-                    						</div>
-                    					</td>
-                    					<td>
-                    						<div data-title="Add to cart">
-                    							<a href="#" class="button">Add to cart</a>
-                    						</div>
-                    					</td>
-                    				</tr>
-                    				<tr class="tr-description">
-                    					<td class="td-label">Description</td>
-                    					<td>Phasellus sed volutpat orci. Fusce eget lore mauris vehicula elementum gravida nec dui. Aenean aliquam varius ipsum, non ultricies tellus sodales eu. Donec dignissim viverra nunc, ut aliquet magna posuere eget.</td>
-                    					<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
-                    					<td>The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece comfort all year around. Feel better in this sweatshirt because Hanes keeps plastic bottles of landfills by using recycled polyester.7.8 ounce fleece sweatshirt made with up to 5 percent polyester created from recycled plastic.</td>
-                    				</tr>
-                    				<tr class="tr-content">
-                    					<td class="td-label">Content</td>
-                    					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
-                    					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
-                    					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</td>
-                    				</tr>
-                    				<tr class="tr-dimensions">
-                    					<td class="td-label">Dimensions</td>
-                    					<td>N/A</td>
-                    					<td>N/A</td>
-                    					<td>N/A</td>
-                    				</tr>
-                    			</tbody>
-                    		</table>
-                    	</div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
-		<!-- Quickview -->
-		<div class="quickview-popup">
-			<div id="quickview-container">
-				<div class="quickview-container"> 
-					<a href="#" class="quickview-close"></a> 
-					<div class="quickview-notices-wrapper"></div> 
-					<div class="product single-product product-type-simple">
-						<div class="product-detail">
-							<div class="row"> 
-								<div class="img-quickview"> 
-									<div class="product-images-slider">
-										<div id="quickview-slick-carousel"> 
-											<div class="images"> 
-												<div class="scroll-image">
-													<div class="slick-wrap">
-														<div class="slick-sliders image-additional" data-dots="true" data-columns4="1" data-columns3="1" data-columns2="1" data-columns1="1" data-columns="1" data-nav="true">
-															<div class="img-thumbnail slick-slide"> 
-																<a href="media/product/3.jpg" class="image-scroll" title="">
-																	<img width="900" height="900" src="media/product/3.jpg" alt="">
-																</a> 
-															</div>
-															<div class="img-thumbnail slick-slide"> 
-																<a href="media/product/3-2.jpg" class="image-scroll" title="">
-																	<img width="900" height="900" src="media/product/3-2.jpg" alt="">
-																</a> 
-															</div>
-														</div>
-													</div>
-												</div> 
-											</div> 
-										</div> 
-									</div> 
-								</div> 
-								<div class="quickview-single-info">
-									<div class="product-content-detail entry-summary">
-										<h1 class="product-title entry-title">Twin Hoops</h1>
-										<div class="price-single">
-											<div class="price">
-												<del><span>$150.00</span></del>
-												<span>$100.00</span>
-											</div>
-										</div>
-										<div class="product-rating"> 
-											<div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
-												<span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span>
-											</div> 
-											<a href="#" class="review-link">(<span class="count">1</span> customer review)</a> 
-										</div>
-										<div class="description"> 
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis…</p> 
-										</div>
-										<form class="cart" method="post" enctype="multipart/form-data">
-											<div class="quantity-button">
-												<div class="quantity"> 
-													<button type="button" class="plus">+</button> 
-													<input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" autocomplete="off"> 
-													<button type="button" class="minus">-</button> 
-												</div> 
-												<button type="submit" class="single-add-to-cart-button button alt">Add to cart</button> 
-											</div> 
-											<button class="button quick-buy">Buy It Now</button>
-										</form> 
-									</div> 
-								</div> 
-							</div> 
-						</div>
-					</div> 
-					<div class="clearfix"></div> 
-				</div> 
+				</div>
 			</div>
 		</div>
-		<!-- Page Loader -->
-		<div class="page-preloader">
-	    	<div class="loader">
-	    		<div></div>
-	    		<div></div>
-	    	</div>
-	    </div>
-			<!-- footer -->
+	</div>
+
+	<!-- Quickview -->
+	<div class="quickview-popup">
+		<div id="quickview-container">
+			<div class="quickview-container">
+				<a href="#" class="quickview-close"></a>
+				<div class="quickview-notices-wrapper"></div>
+				<div class="product single-product product-type-simple">
+					<div class="product-detail">
+						<div class="row">
+							<div class="img-quickview">
+								<div class="product-images-slider">
+									<div id="quickview-slick-carousel">
+										<div class="images">
+											<div class="scroll-image">
+												<div class="slick-wrap">
+													<div class="slick-sliders image-additional" data-dots="true"
+														data-columns4="1" data-columns3="1" data-columns2="1"
+														data-columns1="1" data-columns="1" data-nav="true">
+														<div class="img-thumbnail slick-slide">
+															<a href="media/product/3.jpg" class="image-scroll" title="">
+																<img width="900" height="900" src="media/product/3.jpg"
+																	alt="">
+															</a>
+														</div>
+														<div class="img-thumbnail slick-slide">
+															<a href="media/product/3-2.jpg" class="image-scroll"
+																title="">
+																<img width="900" height="900"
+																	src="media/product/3-2.jpg" alt="">
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="quickview-single-info">
+								<div class="product-content-detail entry-summary">
+									<h1 class="product-title entry-title">Twin Hoops</h1>
+									<div class="price-single">
+										<div class="price">
+											<del><span>$150.00</span></del>
+											<span>$100.00</span>
+										</div>
+									</div>
+									<div class="product-rating">
+										<div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+											<span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5
+												based on <span class="rating">1</span> customer rating</span>
+										</div>
+										<a href="#" class="review-link">(<span class="count">1</span> customer
+											review)</a>
+									</div>
+									<div class="description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis…</p>
+									</div>
+									<form class="cart" method="post" enctype="multipart/form-data">
+										<div class="quantity-button">
+											<div class="quantity">
+												<button type="button" class="plus">+</button>
+												<input type="number" class="input-text qty text" step="1" min="1" max=""
+													name="quantity" value="1" title="Qty" size="4" placeholder=""
+													inputmode="numeric" autocomplete="off">
+												<button type="button" class="minus">-</button>
+											</div>
+											<button type="submit" class="single-add-to-cart-button button alt">Add to
+												cart</button>
+										</div>
+										<button class="button quick-buy">Buy It Now</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Loader -->
+	<div class="page-preloader">
+		<div class="loader">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- footer -->
 	<footer id="site-footer" class="site-footer four-columns no-border-top">
 		<div class="footer">
 			<div class="section-padding">
 				<div class="section-container">
 					<div class="block-widget-wrap">
 						<div class="row">
-							<div class="col-lg-3 col-md-6 column-1">
-								<div class="block block-menu">
-									<h2 class="block-title">Customer Services</h2>
-									<div class="block-content">
-										<ul>
-											<li>
-												<a href="shop-grid-left.html">Contact Us</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Track Your Order</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Product Care &amp; Repair</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Book an Appointment</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Frequently Asked Questions</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Shipping &amp; Returns</a>
-											</li>
-										</ul>
+							<div class="col-lg-4 column-center">
+								<div class="column-wrap">
+									<div class="block block-image m-b-20">
+										<img width="180" src="media/ziva.logo.svg.svg" alt="">
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-6 column-2">
-								<div class="block block-menu">
-									<h2 class="block-title">About Us</h2>
-									<div class="block-content">
-										<ul>
-											<li>
-												<a href="#">About Us</a>
-											</li>
-											<li>
-												<a href="#">FAQ</a>
-											</li>
-											<li>
-												<a href="#">Our Producers</a>
-											</li>
-											<li>
-												<a href="#">Sitemap</a>
-											</li>
-											<li>
-												<a href="#">Terms &amp; Conditions</a>
-											</li>
-											<li>
-												<a href="#">Privacy Policy</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6 column-3">
-								<div class="block block-menu">
-									<h2 class="block-title">Catalog</h2>
-									<div class="block-content">
-										<ul>
-											<li>
-												<a href="shop-grid-left.html">Earrings</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Necklaces</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Bracelets</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Rings</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Jewelry Box</a>
-											</li>
-											<li>
-												<a href="shop-grid-left.html">Studs</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6 column-4">
-								<div class="block block-newsletter">
-									<h2 class="block-title">Our Newsletter</h2>
-									<div class="block-content">
-										<div class="newsletter-text">Sign up for the latest Ice offers and exclusives.
+							<div class="col-lg-4 column-left">
+								<div class="column-wrap">
+									<div class="block block-menu">
+										<h2 class="block-title" style="color: #B16C6C;">Customer Services</h2>
+										<div class="block-content">
+											<ul>
+												<li>
+													<a href="index.html" style="color: #B16C6C;">Home</a>
+												</li>
+												<li>
+													<a href="about.html" style="color: #B16C6C;">About Us</a>
+												</li>
+												<li>
+													<a href="#" style="color: #B16C6C;">Privacy Policy</a>
+												</li>
+												<li>
+													<a href="Faq.html" style="color: #B16C6C;">Frequently Ask
+														Question</a>
+												</li>
+												<li>
+													<a href="contect.html" style="color: #B16C6C;">Contact Us</a>
+												</li>
+											</ul>
 										</div>
-										<form action="" method="post" class="newsletter-form">
-											<input type="email" name="your-email" value="" size="40"
-												placeholder="Email address">
-											<span class="btn-submit">
-												<input type="submit" value="Subscribe">
-											</span>
-										</form>
+									</div>
+									<div class="block block-newsletter">
+
+										<div class="block-content">
+
+											<form action="" method="post" class="newsletter-form">
+												<input type="email" name="your-email" value="" size="40"
+													placeholder="Book an Appointment"
+													style="background-color: #F8ECEC;">
+												<span class="btn-submit" style="background-color: #F8ECEC;">
+													<input type="submit" value="Subscribe">
+												</span>
+											</form>
+										</div>
 									</div>
 								</div>
+							</div>
 
+							<div class="col-lg-4 column-right">
+								<div class="column-wrap">
+									<div class="block block-menu">
+										<h2 class="block-title" style="color: #B16C6C;">Visit Our Showroom</h2>
+										<div class="block-content">
+											<ul>
+												<li class="mb-0" style="color: #B16C6C;">
+													Austrelia
+												</li>
+												<li class="mb-0" style="color: #B16C6C;">
+													Level 4, 267 Collins Street
+												</li>
+												<li class="mb-0" style="color: #B16C6C;">
+													Monday – Friday: 10am-5:30pm
+												</li>
+												<li class="mb-0" style="color: #B16C6C;">
+													Saturday: 10am-5pm
+												</li>
+												<li class="mb-0" style="color: #B16C6C;">
+													Walk-ins and appointments
+												</li>
+											</ul>
+											<ul class="mt-4">
+												<li class="mb-0">
+													<a href="tel:1300 929 888" style="color: #B16C6C;">📞 1300 929
+														888</a>
+												</li>
+												<li class="mb-0">
+													<a href="melto:Ziya@info.com"
+														style="color: #B16C6C;">Ziya@info.com</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 								<div class="block block-social">
 									<ul class="social-link">
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -637,13 +689,15 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="footer-left">
-									<p class="copyright">Copyright © 2023. All Right Reserved</p>
+									<p class="copyright" style="color: #B16C6C;">Copyright © 2025, RKDDT Diamonds.</p>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="footer-right">
 									<div class="block block-image">
-										<img width="309" height="32" src="media/payments.png" alt="">
+										<img width="150" height="60" src="media/brand/brand-1.svg" alt="">
+										<img width="150" height="60" src="media/brand/brand-1.svg" alt="">
+										<img width="150" height="60" src="media/brand/brand-1.svg" alt="">
 									</div>
 								</div>
 							</div>
@@ -654,17 +708,17 @@
 		</div>
 	</footer>
 
-		<!-- Dependency Scripts -->
-		<script src="libs/popper/js/popper.min.js"></script>
-		<script src="libs/jquery/js/jquery.min.js"></script>
-		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-		<script src="libs/slick/js/slick.min.js"></script>
-		<script src="libs/mmenu/js/jquery.mmenu.all.min.js"></script>
-		
-		<!-- Site Scripts -->
-		<script src="assets/js/app.js"></script>
+	<!-- Dependency Scripts -->
+	<script src="libs/popper/js/popper.min.js"></script>
+	<script src="libs/jquery/js/jquery.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/js/slick.min.js"></script>
+	<script src="libs/mmenu/js/jquery.mmenu.all.min.js"></script>
 
-		<!-- <script>
+	<!-- Site Scripts -->
+	<script src="assets/js/app.js"></script>
+
+	<!-- <script>
 			const products = [
 				{ id: 1, name: "Gold plated Kundan studded Multi Col…", price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg",rate_img: "./assets/img/Product/rate.svg" },
 				{ id: 2, name: "Gold plated Kundan studded Multi Col…", price: "$699", category: "Electronics", image: "./assets/img/Product/product-four.svg",rate_img: "./assets/img/Product/rate.svg" },
@@ -691,37 +745,72 @@
         });
 		</script> -->
 
-		<script>
-			const products = [
-				{ id: 1, name: "Gold plated Kundan studded Multi Col…", price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
-				{ id: 2, name: "Gold plated Kundan studded Multi Col…", price: "$699", category: "Electronics", image: "./assets/img/Product/product-four.svg", rate_img: "./assets/img/Product/rate.svg" },
-				{ id: 3, name: "Gold plated Kundan studded Multi Col…", price: "$199", category: "Accessories", image: "./assets/img/Product/product-three.svg", rate_img: "./assets/img/Product/rate.svg" },
-				{ id: 4, name: "Gold plated Kundan studded Multi Col…", price: "$149", category: "Furniture", image: "./assets/img/Product/product-four.svg", rate_img: "./assets/img/Product/rate.svg" },
-				{ id: 5, name: "Gold plated Kundan studded Multi Col…", price: "$79", category: "Appliances", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" }
-			];
-		
-			const productList = document.getElementById("product-list");
-		
-			products.forEach(product => {
-				const productBox = document.createElement("div");
-				productBox.className = "col-md-3 product-box";
-				productBox.innerHTML = `
+	<script>
+		const products = [
+			{ id: 1, name: "Bypass Ring with Lab Grown Diamonds Ring in 18kt Yellow Gold", short_description: 'Classy and luxurious, this stunning bypass ring Lab Grown Diamonds Ring Set in refined 18kt yellow gold, this luxurious piece is perfect for stepping out in flawless style', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 2, name: "Pear and Oval Shape Lab Grown Diamond Cubic Zirconia Toi Et Moi Ring in 18K Gold Ring", short_description: 'Celebrate enduring love with this 18 karat yellow gold engagement ring. oval cut diamond in a basket setting, with round brilliant side accents and Part of our Evermore Bridal Collection, this piece is backed by our Lifetime Diamond Warranty.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 3, name: "Marquise Cut Lab-Grown Diamond Ring, Double Band Engagement Diamond Ring in 18kt Yellow Gold", short_description: 'An extraordinary engagement ring to symbolise your love story. marquise-cut lab-grown diamond in a secure four-claw setting, this 18 karat yellow gold engagement ring features a distinctive, statement design with a double band on one side. Exhibiting premium E colour and VVS clarity for exceptional radiance, the lab-grown diamond is certified sustainability rated, IGI certified and backed by our Lifetime Diamond Warranty.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 4, name: "Pear Cut Lab-Grown Diamond Solitaire Engagement Ring in Platinum Ring", short_description: 'Embody your love story with this unique platinum Ring. pear cut lab-grown diamond solitaire engagement ring. Featuring a captivating H colour and VS clarity stone in a timeless 3-prong setting, this ring offers both elegance and sophistication. Finished with a polished shine, it’s the perfect symbol of your enduring commitment. Backed by our Lifetime Diamond Warranty, the lab-grown diamond in this ring is also certified sustainability rated. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 5, name: "Marquise Cut Lab-Grown Diamond Solitaire Engagement Ring in 18kt White Gold", short_description: 'Timeless elegance meets modern design in this unique solitaire engagement ring, featuring a single marquise cut lab-grown diamond. Set in 18 karat white gold in a 2 V shaped prong setting, the laboratory-grown diamond showcases elevated VVS clarity and E colour. This beautiful ring is backed by our Lifetime Diamond Warranty and comes with an IGI certificate. The lab-grown diamond in this ring is also certified sustainability rated. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 6, name: "Pear Cut Lab-Grown Diamond Solitaire Bezel Set Engagement Ring in 18kt Yellow Gold", short_description: 'Mark your commitment with this elegant 18 karat yellow gold bezel set engagement ring. This beautifully timeless ring lab-grown diamond, exhibiting elevated VVS clarity and E colour. This ring comes with an IGI certificate and is backed by our Lifetime Diamond Warranty. The laboratory-grown diamond in this ring is also certified sustainability rated. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 7, name: "Radiant Cut Lab-Grown Diamond Solitaire Engagement Ring in Pla", short_description: 'Mark your everlasting commitment with this statement platinum Ring radiant cut lab-grown diamond solitaire engagement ring. Showcasing an H colour and VS clarity stone in a classic 4-prong setting, this ring exudes timeless elegance. Backed by our Lifetime Diamond Warranty, the laboratory-grown diamond in this ring is also certified sustainability rated. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 8, name: "Emerald Cut Lab Grown Diamond Halo Engagement Ring in 18kt White Goldd", short_description: 'Honour your partnership with this bold halo and side accent engagement ring, lab-grown diamonds. emerald cut lab-grown diamond at its center, shouldered & surrounded by round brilliant laboratory-grown diamonds, all of VVS clarity and E colour. This beautifully crafted ring in 18 karat white gold, is a ring that will be cherished for a lifetime. This piece is backed by our Lifetime Diamond Warranty and comes with an IGI certificate. The lab-grown diamonds in this ring are also certified sustainability rated. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 9, name: "Spiral Lab Grown diamonds Ring in 18kt yellow gold", short_description: 'Classic with a contemporary twist, this spiral ring is beautifully paved with Lab Grown diamonds, set in 18kt yellow gold. Exclusive to the Michael Hill Classics collection.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 10, name: "Pear and Oval Shape Lab Grown Diamond Cubic Zirconia Toi Et Moi Ring in 18K Gold Ring", short_description: 'Celebrate timeless elegance with this "Toi et Moi" cubic zirconia pear and oval open bypass ring. Crafted with solid construction and rhodium plated for lasting shine, this ring beautifully combines two distinct and trending stone shapes. A sophisticated addition to your jewellery collection.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 10, name: "Lab Grown Round Brilliant Diamond Graduated Diamond Bezel Set Ring in 18kt Yellow Gold", short_description: 'Redefine your jewellery wardrobe with this 18K yellow gold ring, featuring round brilliant diamonds. The five stones, showcasing HI color and I2/I3 clarity, are bezel set in a unique graduated design with a polished finish. Crafted with solid construction and backed by our Lifetime Diamond Warranty, this ring is a beautiful addition to your collection. Part of our exclusive Serendipity Collection.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 11, name: "Natural Diamond Halo Everlight Pear Pendant and Huggie Earrings Set in White Gold", short_description: 'This sterling silver set features a pear floating halo pendant and huggie drop earrings with Natural Diamond of round brilliant diamonds, of HI colour and I3 clarity. The pendant and earrings are each crafted with Natural Diamond. Part of our exclusive Everlight Collection, each piece features our unique center diamond setting, for moving radiance. The pendant hangs from a 45cm cable chain including a 5cm extender and spring ring clasp. Backed by our Lifetime Diamond Warranty', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 12, name: "Natural Diamond Halo Everlight Pear Pendant in 18kt Yellow Gold", short_description: 'This 18-karat yellow gold Everlight pendant showcases a pear-shaped design with Natural brilliant diamonds, of HI colour and I3 clarity. The floating halo surrounds a center diamond, unique to our Everlight Collection. This timeless design is enhanced with diamonds along the pendant bale. It includes a 45cm cable chain including a 5cm extender, secured with a spring ring clasp. Backed by our Lifetime Diamond Warranty', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 13, name: "Everlight Pendant with Lab Grown Diamond in 18kt Yellow Gold", short_description: '', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 14, name: "Natural Diamond Infinity Necklace with Diamonds in White Gold", short_description: 'Have a delightful accessory you can wear always with Natural Diamond this infinity necklace. Showcasing the symbol of limitlessness and eternity, it is lined with sparkling diamonds for a refined flair. Immaculately set in White Gold, this necklace will upgrade your wardrobe.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 15, name: "Illusion Hoop Earrings with Lab Grown Diamonds in White Gold", short_description: 'A striking design that will enhance your look. These earrings come with 3 rows of diamonds with Lab Grown diamonds with an open back giving the illusion of multiple layers. They are a glittering set for a stylish ensemble. Flawless in sterling silver, these earrings will mesmerise everyone.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 16, name: "Single Drop Earrings with Lab Grown Diamonds in 18kt Yellow Gold", short_description: 'A striking design that will look fabulous on anyone, this pair of earrings come with a single diamond drop on each side. Lined with Lab Grown diamonds extending around the top hoop, they are a glittering set for a stylish ensemble. Created in 18kt yellow gold, these earrings will mesmerise everyone.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 17, name: "Lab Grown Diamond Hoop Earrings with Cubic Zirconia in White Gold", short_description: 'Carefully crafted to give you a flawless accessory, this pair of hoops will be a refined accompaniment for your next night out. Embellished with cubic zirconia gemstones for a glittering allure, they are a timeless set. With a sterling silver composition for an opulent radiance, these earrings will have you looking dignified for any occasion', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 18, name: "Diamond Dot Dash Mini Hoop Earrings in 18kt White Gold", short_description: 'Discover modern elegance with our 18-karat white gold diamond dot dash mini hoop earrings. Round brilliant diamonds in IJKL colour and I2-I3 clarity intertwine seamlessly with baguette diamonds of the same specifications. With Lab Grown Diamond, these 10mm hoop earrings encapsulate understated luxury.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 19, name: "Elegant Dainty Slider Bracelet for Women with Pear Shaped Cubic Zirconia Stones, Sparkly Silver Bracelet for Women and Teenage Girls,", short_description: ' Sparkling crystals delicately set in a stylish design draw the eye to this elegant tennis bracelet for women. The innovative bead fastening slides up and down to adjust the sizing to fit every wrist. These could be bracelets for girls or women alike.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 20, name: "Round Cut Lab-Grown Diamond Tennis Bracelet In 18K White Gold", short_description: 'Simple and brilliant, this classic tennis bracelet features round, Lab-Grown brilliant diamonds framed in 18k white gold.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 21, name: "Lab Grown Round Brilliant Buttercup Diamond Tennis Bracelet set in 18k White Gold", short_description: 'This single row buttercup prong set round brilliant cut diamond eternity bracelet is set with F color & VS1 clarity diamonds, every diamond is set beautifully and carefully in a 4-prong setting, the double securing clasp allows for worry and stress-free wear. This diamond tennis bracelet is made in 18k White Gold.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 22, name: "Lab-Grown Oval Diamond Tennis Bracelet in 18k White Gold", short_description: 'Let your wrist shimmer beautifully when you wear this classic tennis bracelet set with 8 ct. of gorgeous oval-cut diamonds that catch the light. The 18k white gold design promises lasting quality and bright luster.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 23, name: "Prong Lab-Grown Diamond Tennis Bracelet In 18k White Gold", short_description: 'Flash some brilliance with this breathtaking tennis bracelet, showcasing dazzling round lab-grown diamonds prong-set in complementing 18k white gold.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 24, name: "Four Prong Lab-Grown Diamond Tennis Bracelet In 18K White Gold", short_description: 'Simple and brilliant, this classic tennis bracelet features round, Lab-Grown brilliant diamonds framed in 18k white gold.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 25, name: "Emerald Diamond Tennis Bracelet in 14k White Gold", short_description: 'Brilliant emerald-cut diamonds sparkle vividly along the length of this sophisticated tennis bracelet as it catches the light. It boasts gleaming 14k white gold design that complements the stones with its cool luster.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 26, name: "9 Stone Cluster Diamond Tennis Bracelet in 18kt White Gold", short_description: 'Lift your everyday look with this stunning 9 stone bracelet. Comprised of Lab Grown diamonds delicately set in 18kt white gold, this striking bracelet adds a touch of brilliance to any outfit.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 27, name: "Diamond Tennis Bracelet in 18kt Yellow Gold", short_description: 'This luxurious 18 karat White gold diamond tennis bracelet features a bold of round brilliant diamonds. Each diamond, of JK colour and I3 clarity, is meticulously claw set. The bracelet spans 18cm in length and secures with a tongue and groove clasp, ensuring a perfect fit. Accompanied by our Lifetime Diamond Warranty, this piece is not just an accessory, but a celebration of timeless beauty and elegance', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 28, name: "Lab-Grown Diamond Tennis Bracelet set in 18kt White Gold", short_description: 'This exquisite tennis bracelet features stunning total weight of lab-grown diamonds. Beautifully crafted in 18kt White Gold, this bracelet will be cherished for a lifetime. For every LAB. Collection piece sold in Australia, New Zealand and Canada, Michael Hill has committed to planting up to 10 trees with One Tree Planted.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 29, name: "Sapphire & Diamond Dot Dash Tennis Bracelet with Lab Grown Diamond 18kt White Gold", short_description: 'Embark on a journey of elegance with our 18-karat white gold sapphire and diamond dot dash tennis bracelet. Round brilliant sapphires harmonies with baguette diamonds of HI colour, and I1-I2 clarity, this bracelet is a modern interpretation of a classic design, adding a touch of sophistication to your look, making it a versatile addition to your jewellery collection.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 30, name: "Tennis Bracelet with Cubic Zirconia in White Gold, Sterling Silver", short_description: 'This truly timeless piece would make a perfect addition to any jewellery box, rhodium plated for lasting shine. Add this Tennis Bracelet with cubic zirconia set in White Gold silver to any outfit for a classic look.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 31, name: "Cubic Zirconia Tennis Bracelet in White Gold, Sterling Silver", short_description: 'Bring an eye-catching touch to your every look with this 19cm cubic zirconia tennis bracelet, featuring prong set stones, crafted in rhodium plated sterling silver for lasting shine. With a 2cm extender and secured with a lobster clasp, its a stylish piece youll want to wear on repeat', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 32, name: "Bezel Round Cut Lab-Grown Diamond Tennis Necklace Yellow 18KT", short_description: 'A classic tennis silhouette is updated by bezel-set lab diamonds for a look thats all at once modern and timeless', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 33, name: "3 Prong Round Lab-Grown Diamond Tennis Necklace White Gold 18KT", short_description: 'Timeless and resplendent, this show-stopping tennis necklace features dazzling round diamonds that produce an aura of shimmering, eye-catching light.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 34, name: "3 Prong Round Cut Lab-Grown Diamond Tennis Necklace White Gold 18KT", short_description: 'Timeless and resplendent, this show-stopping tennis necklace features dazzling round diamonds that produce an aura of shimmering, eye-catching light.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 35, name: "Oval & Round Cut Lab-Grown Diamond Tennis Necklace For 18Kt White Gold", short_description: 'This unique lab diamond tennis necklace evokes nature and romance with scattered round and pear-shaped lab diamonds that shimmer from every angle.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 36, name: "3 Prong Round Cut Lab-Grown Diamond Tennis Necklace White Gold 18KT", short_description: 'Timeless and resplendent, this show-stopping tennis necklace features dazzling round diamonds that produce an aura of shimmering, eye-catching light.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 37, name: "3 Prong Round Lab-Grown Diamond Tennis Necklace White Gold 18KT", short_description: 'Timeless and resplendent, this show-stopping tennis necklace features dazzling round diamonds that produce an aura of shimmering, eye-catching light.', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+			{ id: 38, name: "Bezel Round Cut Lab-Grown Diamond Tennis Necklace Yellow 18KT", short_description: 'A classic tennis silhouette is updated by bezel-set lab diamonds for a look thats all at once modern and timeless', price: "$999", category: "Electronics", image: "./assets/img/Product/product-one.svg", rate_img: "./assets/img/Product/rate.svg" },
+		];
+
+		const productList = document.getElementById("product-list");
+
+		products.forEach(product => {
+			const productBox = document.createElement("div");
+			productBox.className = "col-md-3 product-box";
+			productBox.innerHTML = `
 					<img class="product-img" src="${product.image}" alt="${product.name}">
 					<p class="product-name">${product.name}</p>
 					<img class="rate-img" src="${product.rate_img}" alt="${product.name} rating">
 				`;
-		
-				productBox.addEventListener("click", () => {
-					// Store the product details in localStorage
-					localStorage.setItem(`product-${product.id}`, JSON.stringify(product));
-		
-					// Redirect to detail page with only the ID as a query param
-					window.location.href = `product-detailes.html?id=${product.id}`;
-				});
-		
-				productList.appendChild(productBox);
+
+			productBox.addEventListener("click", () => {
+				// Store the product details in localStorage
+				localStorage.setItem(`product-${product.id}`, JSON.stringify(product));
+
+				// Redirect to detail page with only the ID as a query param
+				window.location.href = `product-detailes.html?id=${product.id}`;
 			});
-		</script>
-		
-	</body>
+
+			productList.appendChild(productBox);
+		});
+	</script>
+
+</body>
+
 </html>

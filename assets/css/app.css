@@ -7,15 +7,29 @@
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
-
-.sticky {
-    background-color: rgba(248, 236, 236, 0.5);
+.home .site-header.header-v1 {
+	background: #f8ecec;
+}
+.home .site-header.header-v1.sticky {
+    background-color: rgb(248 236 236 / 50%);
     backdrop-filter: blur(40px);
     position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
 }
+
+.whatsapp {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 9999;
+}
+.whatsapp img{
+	width: 70px;
+	height: 70px;
+}
+
 .image-additional .img-item img , .image-thumbnail .img-item .img-thumbnail-scroll{
 	border-radius: 16px;
 }
@@ -5979,7 +5993,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 [class~=site-header][class~=color-white] [class~=header-mobile] [class~=navbar-toggle]:before,
 [class~=site-header] [class~=header-search-form] [class~=search-from] #search-submit,
 [class~=site-header][class~=color-white] [class~=header-mobile] [class~=mini-cart] [class~=cart-icon] {
-	color: #fff;
+	color: #2c2c2c;
 }
 
 [class~=site-header][class~=header-v2] [class~=site-logo] {
@@ -6668,7 +6682,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 }
 
 [class~=site-header] [class~=header-desktop] {
-	padding-top: 10px;
+	padding-top: 16px;
 }
 
 [class~=site-header][class~=header-v3] [class~=header-middle] {
@@ -11087,7 +11101,6 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 
 [class~=site-navigation] ul>li[class~=level-0]>a>span {
 	display: inline-block;
-	font-weight: 600;
 }
 
 [class~=mini-cart] [class~=cart-popup] [class~=cart-list] li[class~=empty] [class~=go-shop] i {
@@ -11789,7 +11802,7 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 
 [class~=block-sliders][class~=color-white] i[class~=slick-arrow],
 [class~=block-sliders][class~=color-primary] i[class~=slick-arrow]:hover {
-	color: #fff;
+	color: #4E2A2A;
 }
 
 [class~=block-map] iframe {
@@ -11825,7 +11838,7 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 [class~=block-sliders][class~=color-white] i[class~=slick-arrow] {
-	border-left-color: #fff;
+	border-left-color: #4E2A2A;
 }
 
 [class~=block-banners][class~=banners-effect] [class~=banner-image]:hover img {
@@ -11845,15 +11858,15 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 [class~=block-sliders][class~=color-white] i[class~=slick-arrow] {
-	border-bottom-color: #fff;
+	border-bottom-color: #4E2A2A;
 }
 
 [class~=block-sliders][class~=color-white] i[class~=slick-arrow] {
-	border-right-color: #fff;
+	border-right-color: #4E2A2A;
 }
 
 [class~=block-sliders][class~=color-white] i[class~=slick-arrow] {
-	border-top-color: #fff;
+	border-top-color: #4E2A2A;
 }
 
 [class~=block-products][class~=layout-2][class~=slider] [class~=content-product-list] i[class~=slick-arrow],
@@ -12000,11 +12013,7 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 [class~=block-products][class~=slider] [class~=content-product-list] i[class~=slick-arrow] {
-    top: 45%;
-    background: #6c3636;
-    padding: 7px;
-    color: white;
-    border-radius: 12px;
+	top: 40%;
 }
 
 [class~=block-sliders] i[class~=slick-arrow] {
@@ -12293,7 +12302,7 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 [class~=block-sliders][class~=color-white] [class~=item-content] [class~=item-info] [class~=title-slider] {
-	color: #fff;
+	color: #4E2A2A;
 }
 
 [class~=block-product-cats] ul li [class~=count] {
@@ -12338,7 +12347,7 @@ body:not([class~=home]) [class~=site-navigation] ul>li[class~=level-0]>[class~=s
 }
 
 .block-sliders .item-content .item-info .title-slider {
-	font-size: 60pt;
+	font-size: 50pt;
 }
 
 .block-sliders .item-content .item-info .title-slider {
@@ -16061,7 +16070,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 [class~=block-newsletter] [class~=newsletter-form] [class~=btn-submit]:before,
 [class~=block-banners][class~=layout-6] [class~=block-widget-banner] [class~=banner-wrapper-infor] [class~=content] [class~=title-banner],
 .block-instagram a.instagram:after {
-	color: #fff;
+	color: #B16C6C;
 }
 
 .block-products ul.products-list li .product-image {
@@ -30429,8 +30438,11 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	margin-top: 10px;
 }
 
-#site-footer [class~=footer-bottom] [class~=footer-right] {
-	text-align: right;
+#site-footer [class~=footer-bottom] [class~=footer-right] .block-image{
+	display: flex;
+	gap:40px;
+	overflow-x: auto;
+	justify-content: center;
 }
 
 #site-footer [class~=social-link] li a:hover {
@@ -30615,10 +30627,6 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 
 #site-footer [class~=social-link] li {
 	margin-top: 0;
-}
-
-#site-footer [class~=footer-bottom] {
-	margin-top: 30px;
 }
 
 #site-footer[class~=three-columns] [class~=column-center] {
@@ -30818,7 +30826,6 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 .all-product-sec .product-box{
 	margin-top: 20px;
-	cursor: pointer;
 }
 
 
@@ -30885,14 +30892,11 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 .contect-form,
 .Faq{
 	background-image: url(../img/bg.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* background-size: cover; */
+	background-repeat: repeat;
 	background-position: center;
 	background-color: #F2DADA;
-	height: 100%;
-}
-.Faq{
-	background-color: transparent !important;
+	padding: 30px 10px;
 }
 .contect-form{
 	padding-bottom: 70px;
@@ -30902,8 +30906,6 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	font-weight: 600;
 	color: #4E2A2A;
 	text-align: center;
-	margin-top: 0;
-	padding-top: 50px;
 }
 .contect-form .form-input{
 	display: grid;
@@ -30973,7 +30975,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	padding: 10px 0;
 }
 .Faq .faq-drop-down-main{
-	padding: 30px 0;
+	padding-top: 10%;
 	align-items: center;
 }
 /* FAQ End */
