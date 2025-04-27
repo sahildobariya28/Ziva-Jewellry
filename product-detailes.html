@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="libs/slick/css/slick.css" type="text/css">
     <link rel="stylesheet" href="libs/slick/css/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="libs/mmenu/css/mmenu.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.css" type="text/css">
@@ -202,9 +203,9 @@
                     <div class="section-padding">
                         <div class="container p-l-r">
                             <div class="row justify-content-center">
-                                <div class="col-lg-7 col-md-12 col-12 mx-auto">
+                                <div class="col-lg-8 col-md-12 col-12 mx-auto">
                                     <div class="product-images col-md-12 col-12">
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-10">
                                                 <div class="scroll-image main-image">
                                                     <div class="image-additional slick-carousel"
@@ -275,7 +276,32 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                   
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="scroll-image main-image">
+                                                    <div id="main-images" class="image-additional slick-carousel" data-asnavfor=".image-thumbnail" data-fade="true"
+                                                        data-columns4="1" data-columns3="1" data-columns2="1" data-columns1="1" data-columns="1" data-nav="true">
+                                                        <!-- Main images will load here dynamically -->
+                                                    </div>
+                                                </div>
+                                                <div class="product-details">
+                                                    <h2 id="product-name"></h2>
+                                                    <p id="product-description"></p>
+                                                    <p id="product-price"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="content-thumbnail-scroll">
+                                                    <div id="thumbnail-images" class="image-thumbnail slick-carousel slick-vertical" data-asnavfor=".image-additional"
+                                                        data-centermode="true" data-focusonselect="true" data-columns4="5" data-columns3="4" data-columns2="4"
+                                                        data-columns1="4" data-columns="4" data-nav="true" data-vertical="true" data-verticalswiping="true">
+                                                        <!-- Thumbnail images will load here dynamically -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
                                     </div>
 
                                     <div class="product-info col-md-12 col-12" style="margin-top: 50px;">
@@ -289,14 +315,6 @@
                                         </div>
                                         <div class="description">
                                             <p id="short-description"></p>
-                                        </div>
-                                        <div class="social-share">
-                                            <a href="#" title="Facebook" class="share-facebook" target="_blank"><i
-                                                    class="fa fa-facebook"></i>Facebook</a>
-                                            <a href="#" title="Twitter" class="share-twitter"><i
-                                                    class="fa fa-twitter"></i>Twitter</a>
-                                            <a href="#" title="Pinterest" class="share-pinterest"><i
-                                                    class="fa fa-pinterest"></i>Pinterest</a>
                                         </div>
                                     </div>
                                 </div>
@@ -783,7 +801,7 @@
         }
     </script> -->
 
-    <script>
+    <!-- <script>
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get("id");
 
@@ -798,12 +816,87 @@
                 document.getElementById("product-price").textContent = product.price;
                 document.getElementById("product-category").textContent = product.category;
                 document.getElementById("short-description").textContent = product.short_description;
-                document.getElementById("product-img").src = product.image;
+                document.getElementById("product-img-one").src = product.image_one;
+                document.getElementById("product-img-two").src = product.two;
+                document.getElementById("product-img-three").src = product.three;
+                document.getElementById("product-img-four").src = product.four;
+                document.getElementById("product-img-five").src = product.five;
             }
         }
+    </script> -->
+    <script>
+
+        const product = JSON.parse(localStorage.getItem('product'));
+
+        // Main elements
+        const mainImagesContainer = document.getElementById('main-images');
+        const thumbnailContainer = document.getElementById('thumbnail-images');
+        const productName = document.getElementById('product-name');
+        const productDescription = document.getElementById('product-description');
+        const productPrice = document.getElementById('product-price');
+
+        // Product Text Content
+        productName.textContent = product.name;
+        productDescription.textContent = product.short_description;
+        productPrice.textContent = `Price: ${product.price}`;
+
+        // Images array
+        const images = [
+            product.image_one,
+            product.image_two,
+            product.image_three,
+            product.image_four,
+            product.image_five,
+            product.image_six
+        ];
+
+        // Load main images
+        images.forEach(imgSrc => {
+            if (imgSrc) { // Check if image exists
+                const imgDiv = document.createElement('div');
+                imgDiv.classList.add('img-item', 'slick-slide');
+                imgDiv.innerHTML = `<img width="900" height="900" src="${imgSrc}" alt="" title="">`;
+                mainImagesContainer.appendChild(imgDiv);
+            }
+        });
+
+        // Load thumbnails
+        images.forEach(imgSrc => {
+            if (imgSrc) { // Check if image exists
+                const thumbDiv = document.createElement('div');
+                thumbDiv.classList.add('img-item', 'slick-slide');
+                thumbDiv.innerHTML = `
+            <span class="img-thumbnail-scroll">
+                <img width="600" height="600" src="${imgSrc}" alt="">
+            </span>`;
+                thumbnailContainer.appendChild(thumbDiv);
+            }
+        });
+
+        // Initialize Slick Carousel (Important)
+        // Make sure Slick library is loaded in your project!
+        $('.image-additional').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.image-thumbnail'
+        });
+
+        $('.image-thumbnail').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.image-additional',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            vertical: true,
+            verticalSwiping: true
+        });
+
     </script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 
 </html>
