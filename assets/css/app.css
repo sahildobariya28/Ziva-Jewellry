@@ -25168,8 +25168,10 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 
 .products-list.grid .product-wapper .products-content h3.product-title a {
 	display: inline-block;
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    font-size: smaller;
+    text-transform: math-auto;
 }
 
 .products-list.grid .product-wapper .products-content h3.product-title a:before {
@@ -30979,3 +30981,4 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 	align-items: center;
 }
 /* FAQ End */
+
