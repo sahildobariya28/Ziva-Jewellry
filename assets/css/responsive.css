@@ -1737,9 +1737,36 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .about-main-one , .about-two{
+    height: 450px;
+  }
+  .about-main-one .abt-text, .about-three .abt-text , .about-two .abt-text, .about-four .abt-text{
+    top: 17%;
+    padding-right: 10px;
+  }
+  .faq-drop-down-main.row img{
+    display: none;
+  }
+  .getin-touch-main h1 , .contect-hero .contect-right-text h1{
+    font-size: 30px;
+  }
+  .getin-touch-main p , .contect-hero .contect-right-text p{
+    font-size: 16px;
+  }
+  .contect-hero .contect-right-text button{
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 480px) {
+  .counter{
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .count{
+    padding: 0 15px 0 15px !important;
+  }
   .benner-dimond img {
     display: none;
   }

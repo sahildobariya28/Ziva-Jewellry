@@ -21,13 +21,13 @@
 
 .whatsapp {
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 15px;
+	right: 10px;
 	z-index: 9999;
 }
 .whatsapp img{
-	width: 70px;
-	height: 70px;
+	width: 58px;
+	height: 58px;
 }
 
 .image-additional .img-item img , .image-thumbnail .img-item .img-thumbnail-scroll{
@@ -30873,7 +30873,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 .getin-touch-main{
     background-color: #F2DADA;
-    padding-top: 13%;
+    padding-top: 7%;
     text-align: center;
     padding-bottom: 7%;
 }
@@ -30894,11 +30894,13 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 .contect-form,
 .Faq{
 	background-image: url(../img/bg.svg);
-	/* background-size: cover; */
-	background-repeat: repeat;
+	background-size: cover;
 	background-position: center;
 	background-color: #F2DADA;
 	padding: 30px 10px;
+}
+.Faq{
+	background-repeat: repeat;
 }
 .contect-form{
 	padding-bottom: 70px;
@@ -30979,6 +30981,12 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 .Faq .faq-drop-down-main{
 	padding-top: 10%;
 	align-items: center;
+}
+.rate-img{
+	width: 100px;
+}
+.all-product-main{
+	padding: 20px 0;
 }
 /* FAQ End */
 
